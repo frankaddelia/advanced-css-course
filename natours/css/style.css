@@ -55,47 +55,6 @@ body {
   line-height: 1.7;
   padding: 3rem; }
 
-.header {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
-  background-position: top;
-  background-size: cover;
-  height: 95vh;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  .header__logo-box {
-    left: 4rem;
-    position: absolute;
-    top: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
-    .header__logo:hover {
-      animation: pulse 1s linear infinite; }
-  .header__text-box {
-    left: 50%;
-    position: absolute;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    top: 40%; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  /* fixes the shakiness of animation */
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation: moveInLeft 1s ease-out; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out; }
-
 .btn:link, .btn:visited {
   border-radius: 10rem;
   display: inline-block;
@@ -138,3 +97,44 @@ body {
 .btn--animated {
   animation: moveInButton 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 95vh;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header__logo-box {
+    left: 4rem;
+    position: absolute;
+    top: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+    .header__logo:hover {
+      animation: pulse 1s linear infinite; }
+  .header__text-box {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 40%; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  /* fixes the shakiness of animation */
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out; }
