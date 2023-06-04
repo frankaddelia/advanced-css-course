@@ -5,13 +5,24 @@
   position: relative;
   transform-style: preserve-3d;
 
+  &__heading {
+    color: $color-white;
+    font-size: 2.8rem;
+    font-weight: 300;
+    position: absolute;
+    right: 2rem;
+    text-align: right;
+    text-transform: uppercase;
+    top: 12rem;
+  }
+
   &__side {
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem $shadow-15;
-    font-size: 2rem;
     height: 50rem;
     left: 0;
+    overflow: hidden;
     position: absolute;
     top: 0;
     transition: all 0.8s ease;
@@ -36,5 +47,41 @@
   
   &:hover &__side--back {
     transform: rotateY(0deg);
+  }
+
+  // Front side styling
+  &__picture {
+    background-size: cover;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    height: 23rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &-1 {
+      background-image:
+        linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+        url(../img/nat-5.jpg);
+    }
+    
+    &-2 {
+      background-image: url(../img/nat-5.jpg);
+    }
+    
+    &-3 {
+      background-image: url(../img/nat-5.jpg);
+    }
+
+    &__headng-span {
+      padding: 1rem 1.5rem;
+
+      &--1 {
+         background-image: 
+          linear-gradient(
+            to right bottom, 
+            rgba($color-secondary-light, 0.85)
+            linear-gradient(to right bottom, rgba($color-secondary-light, 0.85)
+        ));
+      }
+    }
   }
 }
