@@ -116,6 +116,9 @@ body {
 .u-margin-top-big {
   margin-top: 8rem; }
 
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
 .btn:link, .btn:visited {
   border-radius: 10rem;
   display: inline-block;
@@ -218,6 +221,8 @@ body {
   .card__picture {
     background-size: cover;
     background-blend-mode: screen;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     height: 23rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
@@ -379,7 +384,7 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   margin-top: -11rem;
-  padding: 25rem 0 50rem 0; }
+  padding: 25rem 0 15rem 0; }
 
 .section-features {
   padding: 20rem 0;
