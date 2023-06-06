@@ -335,10 +335,14 @@ body {
   margin: 0 auto;
   padding: 6rem;
   padding-left: 9rem;
+  position: relative;
   transform: skewX(-12deg);
   width: 75%; }
   .story__img {
-    height: 100%; }
+    backface-visibility: hidden;
+    height: 100%;
+    transform: scale(1.4) translateX(-2.4rem);
+    transition: all 0.5s; }
   .story__shape {
     background-color: orangered;
     clip-path: circle(50% at 50% 50%);
@@ -351,6 +355,25 @@ body {
     width: 15rem; }
   .story__text {
     transform: skewX(12deg); }
+  .story__caption {
+    backface-visibility: hidden;
+    color: #fff;
+    font-size: 1.7rem;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, 20%);
+    transition: all 0.5s; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    backface-visibility: hidden;
+    filter: blur(3px) brightness(80%);
+    transform: scale(1) translateX(-4rem); }
 
 .row {
   max-width: 114rem;
