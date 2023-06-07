@@ -119,6 +119,20 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
+.bg-video {
+  height: 100%;
+  left: 0;
+  opacity: 0.15;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1; }
+  .bg-video__content {
+    height: 100%;
+    object-fit: cover;
+    width: 100%; }
+
 .btn:link, .btn:visited {
   border-radius: 10rem;
   display: inline-block;
@@ -328,7 +342,7 @@ body {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .story {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   font-size: 1.6rem;
@@ -444,5 +458,5 @@ body {
     transform: skewY(7deg); }
 
 .section-stories {
-  background-color: #f7f7f7;
-  padding: 15rem 0; }
+  padding: 15rem 0;
+  position: relative; }
