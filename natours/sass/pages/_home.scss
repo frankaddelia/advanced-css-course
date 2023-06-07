@@ -48,4 +48,9 @@
   border-radius: $default-border-radius;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
   height: 50rem;
+
+  &__form {
+    padding: 6rem;
+    width: 50%;
+  }
 }
