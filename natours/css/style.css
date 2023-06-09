@@ -341,6 +341,28 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 2px;
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  width: 90%; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__input:focus {
+  border-bottom: 3px solid #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  outline: none; }
+
 .story {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;

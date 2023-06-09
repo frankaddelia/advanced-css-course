@@ -1,0 +1,32 @@
+.form {
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    background-color: rgba($color-white, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 2px;
+    color: inherit;
+    display: block;
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    width: 90%;
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
+    }
+  }
+
+  &__input:focus {
+    border-bottom: 3px solid $color-primary;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    outline: none;
+  }
+
+  &__label {
+
+  }
+}
