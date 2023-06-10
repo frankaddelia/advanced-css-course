@@ -15,18 +15,33 @@
     padding: 1.5rem 2rem;
     width: 90%;
 
+    &:focus {
+      border-bottom: 3px solid $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      outline: none;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-secondary-dark;
+    }
+
     &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
     }
   }
 
-  &__input:focus {
-    border-bottom: 3px solid $color-primary;
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
-    outline: none;
+  &__label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    transition: all 0.3s;
   }
 
-  &__label {
-
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    transform: translateY(-4rem);
+    visibility: hidden;
   }
 }
