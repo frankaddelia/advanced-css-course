@@ -419,6 +419,51 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3000; }
+  .popup__content {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    display: table;
+    overflow: hidden;
+    width: 75%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .popup__left {
+    display: table-cell;
+    vertical-align: middle;
+    width: 33.33333%; }
+  .popup__right {
+    display: table-cell;
+    padding: 3rem 5rem;
+    vertical-align: middle;
+    width: 66.666667%; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    column-count: 2;
+    -moz-column-count: 2;
+    column-gap: 4rem;
+    -moz-column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    -moz-column-rule: 1px solid #eee;
+    font-size: 1.4rem;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    margin-bottom: 4rem; }
+
 .story {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
