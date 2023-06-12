@@ -38,16 +38,19 @@
 
     &__text {
         column-count: 2;
-        -moz-column-count: 2;
         column-gap: 4rem;
-        -moz-column-gap: 4rem;
         column-rule: 1px solid $color-grey-light-2;
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem;
         -moz-column-rule: 1px solid $color-grey-light-2;
+
         font-size: 1.4rem;
+        
         hyphens: auto;
         -moz-hyphens: auto;
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
+        
         margin-bottom: 4rem;
     }
 }

@@ -452,10 +452,10 @@ body {
     width: 100%; }
   .popup__text {
     column-count: 2;
-    -moz-column-count: 2;
     column-gap: 4rem;
-    -moz-column-gap: 4rem;
     column-rule: 1px solid #eee;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
     -moz-column-rule: 1px solid #eee;
     font-size: 1.4rem;
     hyphens: auto;
