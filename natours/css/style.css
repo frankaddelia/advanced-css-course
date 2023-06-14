@@ -601,13 +601,20 @@ body {
   position: relative;
   transform: skewX(-12deg);
   width: 75%; }
+  @media (max-width: 56.25em) {
+    .story {
+      padding: 4rem;
+      padding-left: 7rem;
+      width: 100%; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0); } }
   .story__img {
     backface-visibility: hidden;
     height: 100%;
     transform: scale(1.4) translateX(-2.4rem);
     transition: all 0.5s; }
   .story__shape {
-    background-color: orangered;
     clip-path: circle(50% at 50% 50%);
     float: left;
     height: 15rem;
@@ -616,8 +623,14 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
     width: 15rem; }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     backface-visibility: hidden;
     color: #fff;
