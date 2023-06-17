@@ -95,6 +95,10 @@
       transition: opacity 0.2s;
       width: 1.2rem;
     }
+
+    @include respond(tab-land) {
+      border: 3px solid $color-primary;
+    }
   }
 
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
