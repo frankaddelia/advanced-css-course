@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,sass
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,sass
 
+course-files
+linea*
+.vscode
+
 ### Node ###
 # Logs
 logs
