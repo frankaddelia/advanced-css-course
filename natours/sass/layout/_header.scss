@@ -11,8 +11,8 @@
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5px),
-         (min-width: 125px) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5rem),
+         (min-width: 125rem) {
     background-image: linear-gradient(
     to right bottom,
     rgba($color-primary-light, 0.8),
