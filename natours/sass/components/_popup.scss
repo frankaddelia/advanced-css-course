@@ -9,6 +9,12 @@
     visibility: hidden;
     width: 100%;
     z-index: 3000;
+    
+    @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, 0.3);
+        -webkit-backdrop-filter: blur(10px);
+    }
 
     &__content {
         background-color: $color-white;

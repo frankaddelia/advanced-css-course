@@ -268,7 +268,8 @@ body {
     position: absolute;
     top: 0;
     transition: all 0.8s ease;
-    width: 100%; }
+    width: 100%;
+    -webkit-backface-visibility: hidden; }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -552,6 +553,11 @@ body {
   visibility: hidden;
   width: 100%;
   z-index: 3000; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3);
+      -webkit-backdrop-filter: blur(10px); } }
   .popup__content {
     background-color: #fff;
     border-radius: 3px;
@@ -791,7 +797,7 @@ body {
   height: 95vh;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5rem), (min-width: 125rem) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5rem), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem), (min-width: 125rem) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
   @media (max-width: 37.5em) {
