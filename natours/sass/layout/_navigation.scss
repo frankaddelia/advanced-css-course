@@ -17,13 +17,13 @@
         z-index: 2000;
 
         @include respond(tab-port) {
-            right: 4.5rem;
-            top: 4.5rem;
+            right: 4rem;
+            top: 4rem;
         }
 
         @include respond(phone) {
-            right: 3.5rem;
-            top: 3.5rem;
+            right: 3.2rem;
+            top: 3.2rem;
         }
     }
 
