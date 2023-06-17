@@ -649,7 +649,7 @@ body {
   .story__img {
     backface-visibility: hidden;
     height: 100%;
-    transform: scale(1.4) translateX(-2.4rem);
+    transform: scale(1.4) translateX(-4.4rem);
     transition: all 0.5s; }
   .story__shape {
     clip-path: circle(50% at 50% 50%);
