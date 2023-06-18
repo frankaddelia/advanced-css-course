@@ -17,7 +17,9 @@
     top: 0;
     transition: all 0.8s ease;
     width: 100%;
-
+    
+    -webkit-backface-visibility: hidden;
+    
     &--front {
       background-color: $color-white;
     }
@@ -187,7 +189,9 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+         only screen and (hover: none) {
     // Functionality
     background-color: $color-white;
     border-radius: $default-border-radius;
