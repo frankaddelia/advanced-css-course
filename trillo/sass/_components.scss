@@ -339,3 +339,29 @@
 
 //////////////////////////////////////////
 /// Recommend
+.recommend {
+  align-items: center;
+  color: var(--color-grey-dark-3);
+  display: flex;
+  font-size: 1.3rem;
+
+  &__count {
+    margin-right: auto;
+  }
+
+  &__friends {
+    
+  }
+
+  &__photo {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  }
+}
