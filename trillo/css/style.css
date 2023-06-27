@@ -287,6 +287,8 @@ body {
   font-size: 1.3rem; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     border: 3px solid #fff;
     border-radius: 50%;
