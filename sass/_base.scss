@@ -1,0 +1,32 @@
+// color palette
+$black: #212529;
+$white: #F8F9FA;
+
+$grey-light-1: #E9ECEF;
+$grey-light-2: #DEE2E6;
+$grey-light-2: #CED4DA;
+
+$grey-dark-1: #6C757D;
+$grey-dark-2: #495057;
+$grey-dark-3: #343A40;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // Change so 1rem = 10px (10 / 16 = 62.5)
+}
+
+body {
+  background-color: $white;
+  font-family: 'Open Sans', sans-serif;
+}

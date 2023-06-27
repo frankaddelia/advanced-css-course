@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: #F8F9FA;
+  font-family: 'Open Sans', sans-serif; }
+
+.project-links {
+  list-style: none; }
+
+.project-link {
+  color: #212529;
+  font-size: 1.5rem;
+  text-decoration: none; }
+
+.content {
+  background-color: #E9ECEF;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+  max-width: 1200px;
+  padding: 2rem; }
