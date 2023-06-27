@@ -24,6 +24,10 @@
 
 .content {
   display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-flow: column;
+  }
 }
 
 .sidebar {
@@ -44,6 +48,10 @@
   display: flex;
   font-size: 1.4rem;
   padding: 4.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
 }
 
 .description {
@@ -53,6 +61,11 @@
  font-size: 1.4rem;
  margin-right: 4.5rem;
  padding: 3rem;
+
+ @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 
 .user-reviews {
