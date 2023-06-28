@@ -1,4 +1,9 @@
+.projects-container {
+  display: flex;
+}
+
 .project-links {
+  flex: 0 0 33.3333333%;
   list-style: none;
 }
 
@@ -6,4 +11,37 @@
   color: $black;
   font-size: 1.5rem;
   text-decoration: none;
+}
+
+.projects {
+  border-radius: 5rem;
+  box-shadow: 0 2px 5px rgba($black, 0.5);
+  flex: 0 0 66.666667%;
+  
+  &__project-images {
+    max-width: 60rem;
+    position: relative;
+
+    img {
+      border-radius: 5rem;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+    }
+
+    &--1 {
+      left: 0;
+      top: 0;
+    }
+    
+    &--2 {
+      left: 10rem;
+      top: 10rem;
+    }
+    
+    &--3 {
+      left: 20rem;
+      top: 20rem;
+    }
+  }
 }
