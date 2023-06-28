@@ -28,14 +28,14 @@ body {
   text-decoration: none; }
 
 .projects {
-  border-radius: 5rem;
-  box-shadow: 0 2px 5px rgba(33, 37, 41, 0.5);
-  flex: 0 0 66.666667%; }
+  flex: 0 0 66.666667%;
+  min-height: 85vh; }
   .projects__project-images {
     max-width: 60rem;
     position: relative; }
     .projects__project-images img {
       border-radius: 5rem;
+      box-shadow: 0 2px 5px rgba(33, 37, 41, 0.5);
       position: absolute;
       width: 100%;
       z-index: 10; }
@@ -43,11 +43,11 @@ body {
       left: 0;
       top: 0; }
     .projects__project-images--2 {
+      left: 5rem;
+      top: 5rem; }
+    .projects__project-images--3 {
       left: 10rem;
       top: 10rem; }
-    .projects__project-images--3 {
-      left: 20rem;
-      top: 20rem; }
 
 .content {
   background-color: #E9ECEF;

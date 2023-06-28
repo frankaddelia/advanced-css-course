@@ -14,9 +14,8 @@
 }
 
 .projects {
-  border-radius: 5rem;
-  box-shadow: 0 2px 5px rgba($black, 0.5);
   flex: 0 0 66.666667%;
+  min-height: 85vh;
   
   &__project-images {
     max-width: 60rem;
@@ -24,6 +23,7 @@
 
     img {
       border-radius: 5rem;
+      box-shadow: 0 2px 5px rgba($black, 0.5);
       position: absolute;
       width: 100%;
       z-index: 10;
@@ -35,13 +35,13 @@
     }
     
     &--2 {
-      left: 10rem;
-      top: 10rem;
+      left: 5rem;
+      top: 5rem;
     }
     
     &--3 {
-      left: 20rem;
-      top: 20rem;
+      left: 10rem;
+      top: 10rem;
     }
   }
 }
