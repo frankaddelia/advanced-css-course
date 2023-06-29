@@ -14,9 +14,9 @@
   justify-content: center;
   
   @media only screen and (max-width: $bp-smallest) {
-    // flex: 0 0 100%;
-    flex-wrap: wrap;
-    height: 12rem;
+    background-color: var(--color-grey-light-2);
+    flex: 0 0 100%;
+    order: 1;
   }
 
   &__input {
