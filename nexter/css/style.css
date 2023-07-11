@@ -142,8 +142,28 @@ body {
       height: 2.5rem; }
 
 .realtors {
+  align-content: center;
   background-color: #101d2c;
-  grid-column: col-start 7 / full-end; }
+  display: grid;
+  grid-column: col-start 7 / full-end;
+  grid-row-gap: 2rem;
+  justify-content: center;
+  justify-items: center;
+  padding: 3rem; }
+  .realtors__list {
+    align-items: center;
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5vh;
+    grid-template-columns: min-content max-content; }
+  .realtors__img {
+    border-radius: 50%;
+    display: block;
+    width: 7rem; }
+  .realtors__sold {
+    color: #aaa;
+    margin-top: -3px;
+    text-transform: uppercase; }
 
 .features {
   align-items: start;
