@@ -7,8 +7,8 @@
   display: grid;
   grid-column: full-start / col-end 6;
   grid-row-gap: 1.5rem;
-  grid-template-columns: max-content;
-  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
   justify-content: center;
   padding: 8rem;
   padding-top: 4rem;
@@ -41,6 +41,7 @@
   }
 
   &__seenon-logos {
+    align-items: center;
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(4, 1fr);
@@ -48,7 +49,8 @@
 
     img {
       filter: brightness(70%);
-      height: 2.5rem;
+      max-height: 2.5rem;
+      max-width: 100%;
     }
   }
 }
