@@ -10,6 +10,9 @@ $grey-dark-1: #6C757D;
 $grey-dark-2: #495057;
 $grey-dark-3: #343A40;
 
+$content-padding: 2rem;
+$content-width: 120rem;
+
 * {
   margin: 0;
   padding: 0;
@@ -29,4 +32,12 @@ html {
 body {
   background-color: $white;
   font-family: 'Open Sans', sans-serif;
+}
+
+.margin-top-lg {
+  margin-top: 6rem;
+}
+
+.padding-top-lg {
+  padding-top: 6rem;
 }
